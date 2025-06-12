@@ -408,56 +408,121 @@ export default function AboutPage() {
           
           <div className="bg-purple-50 p-6 rounded-lg">
             <div className="space-y-6">
+              {/* 회사 소개 */}
+              <div className="bg-white p-4 rounded border-l-4 border-purple-600">
+                <h5 className="font-semibold text-purple-800 mb-2">🏢 회사 소개</h5>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  위에이알은 메타버스 플랫폼 개발 회사로, 클레이랜드라는 메타버스 서비스를 운영하고 있습니다. 
+                  블록체인 기반의 가상 세계에서 사용자들이 창작하고 소통할 수 있는 플랫폼을 제공하며, 
+                  다양한 게임과 메타버스 서비스를 개발하고 있습니다.
+                </p>
+              </div>
+
+              {/* 담당 업무 */}
+              <div>
+                <h5 className="font-semibold text-gray-800 mb-3">💼 담당 업무</h5>
+                <div className="bg-white p-4 rounded border-l-4 border-indigo-400">
+                  <ul className="text-sm text-gray-700 space-y-2">
+                    <li className="flex items-start"><span className="text-purple-500 mr-2 font-bold">•</span><strong>메타버스 플랫폼 기획:</strong> 클레이랜드 후속 모델 기획 및 백서 작성</li>
+                    <li className="flex items-start"><span className="text-purple-500 mr-2 font-bold">•</span><strong>게임 프로젝트 기획:</strong> 하이퍼캐쥬얼, 수집형 캐쥬얼, 실시간 통신 게임 기획</li>
+                    <li className="flex items-start"><span className="text-purple-500 mr-2 font-bold">•</span><strong>메타버스 서비스 기획:</strong> 보핀(Boppin) 서비스 전체 기획 및 개발 관리</li>
+                    <li className="flex items-start"><span className="text-purple-500 mr-2 font-bold">•</span><strong>조직 관리:</strong> 24인 규모 개발팀 리드 및 프로젝트 매니지먼트</li>
+                    <li className="flex items-start"><span className="text-purple-500 mr-2 font-bold">•</span><strong>데이터 분석:</strong> Firebase Event Log 기획 및 사용자 행동 데이터 분석</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* 프로젝트 타임라인 */}
               <div>
                 <h5 className="font-semibold text-gray-800 mb-3">📅 프로젝트 타임라인</h5>
                 <div className="space-y-4">
                   <div className="bg-white p-4 rounded border-l-4 border-purple-400">
                     <h6 className="font-medium text-purple-800 mb-2">메타버스 플랫폼 프로젝트 기획 (22.11 ~ 22.12)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• 클레이랜드 후속 모델 기획</li>
-                      <li>• 백서 작성</li>
-                      <li>• 경제 시스템 및 보상 구조 구성</li>
+                      <li>• 클레이랜드 후속 모델 기획 및 컨셉 설계</li>
+                      <li>• 메타버스 플랫폼 백서 작성 및 비즈니스 모델 구축</li>
+                      <li>• 블록체인 기반 경제 시스템 및 토큰 보상 구조 설계</li>
+                      <li>• NFT 연동 시스템 및 디지털 자산 관리 체계 구축</li>
                     </ul>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-blue-400">
                     <h6 className="font-medium text-blue-800 mb-2">게임 테스트버전 개발 (22.11 ~ 22.12)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• 하이퍼캐쥬얼 게임 Last Ark 담당</li>
-                      <li>• 테스트버전 출시</li>
+                      <li>• 하이퍼캐쥬얼 게임 'Last Ark' 기획 및 개발 관리</li>
+                      <li>• 게임 메커니즘 설계 및 사용자 경험 최적화</li>
+                      <li>• 테스트버전 출시 및 사용자 피드백 수집</li>
+                      <li>• 게임 밸런스 조정 및 개선사항 도출</li>
                     </ul>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-green-400">
                     <h6 className="font-medium text-green-800 mb-2">차기작 게임 프로젝트 진행 (22.12 ~ 23.01)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• 수집형 캐쥬얼 게임 기획</li>
-                      <li>• 프로토타입 구축</li>
+                      <li>• 수집형 캐쥬얼 게임 컨셉 기획 및 시스템 설계</li>
+                      <li>• 게임 플레이 루프 및 수집 메커니즘 구축</li>
+                      <li>• 프로토타입 개발 및 내부 테스트 진행</li>
+                      <li>• 수익화 모델 및 인앱결제 시스템 설계</li>
                     </ul>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-orange-400">
-                    <h6 className="font-medium text-orange-800 mb-2">실시간 통신 캐쥬얼 게임 프로젝트 진행 (23.01 ~ 23.02)</h6>
+                    <h6 className="font-medium text-orange-800 mb-2">실시간 통신 캐쥬얼 게임 프로젝트 (23.01 ~ 23.02)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Elemental Runner 기획 및 Beta Version 개발</li>
+                      <li>• 'Elemental Runner' 게임 기획 및 시스템 설계</li>
+                      <li>• 실시간 멀티플레이어 시스템 구축</li>
+                      <li>• 네트워크 동기화 및 서버 아키텍처 설계</li>
+                      <li>• Beta Version 개발 완료 및 테스트 진행</li>
                     </ul>
                   </div>
                   <div className="bg-white p-4 rounded border-l-4 border-red-400">
-                    <h6 className="font-medium text-red-800 mb-2">메타버스 서비스 보핀 프로젝트 진행 (23.02 ~ 23.06)</h6>
+                    <h6 className="font-medium text-red-800 mb-2">메타버스 서비스 보핀(Boppin) 프로젝트 (23.02 ~ 23.06)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• 본디를 모티브로 한 메타버스 서비스 기획</li>
-                      <li>• 초기 IA, User flow, Wireframe, 스토리보드 기획</li>
-                      <li>• 차후 서비스 로드맵 설계</li>
-                      <li>• FB Event log 기획 및 데이터 분석</li>
-                      <li>• 24인 조직 인원 관리</li>
-                      <li>• 주기적 1on1 및 스프린트, KPT 회고 관리</li>
+                      <li>• 본디(Bondi Beach)를 모티브로 한 메타버스 서비스 전체 기획</li>
+                      <li>• 사용자 여정 설계: IA, User Flow, Wireframe, 스토리보드 기획</li>
+                      <li>• 아바타 시스템, 소셜 기능, 가상 공간 설계</li>
+                      <li>• 서비스 로드맵 설계 및 단계별 개발 계획 수립</li>
+                      <li>• Firebase Event Log 기획 및 사용자 행동 데이터 분석 체계 구축</li>
+                      <li>• Google Analytics 4 연동 및 KPI 지표 설정</li>
+                      <li>• 24인 규모 개발팀 리드 및 프로젝트 매니지먼트</li>
+                      <li>• 애자일 방법론 도입: 주기적 1on1, 스프린트 관리, KPT 회고 운영</li>
+                      <li>• 주니어 개발자 중심 팀의 성장 관리 및 멘토링</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white p-4 rounded border-l-4 border-teal-400">
+                    <h6 className="font-medium text-teal-800 mb-2">서비스 런칭 및 글로벌 확장 (23.06 ~ 23.07)</h6>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• 동남아시아 3개국 (인도네시아, 말레이시아, 호주) 제한적 오픈</li>
+                      <li>• 현지화 작업 및 다국어 지원 시스템 구축</li>
+                      <li>• 글로벌 사용자 대상 서비스 안정성 확보</li>
+                      <li>• 실시간 모니터링 시스템 구축 및 운영</li>
                     </ul>
                   </div>
                 </div>
               </div>
+
+              {/* 주요 성과 및 학습 */}
               <div className="bg-white p-4 rounded border-l-4 border-purple-500">
-                <h5 className="font-semibold text-purple-800 mb-2">🏆 최종 성과</h5>
-                <ul className="space-y-1 text-gray-700">
-                  <li>• 2023년 6월 인도네시아, 말레이시아, 호주에 제한적 오픈</li>
-                  <li>• 출시 후 D-3리텐션 28%, DAU 1천명 달성</li>
-                </ul>
+                <h5 className="font-semibold text-purple-800 mb-3">🏆 주요 성과 및 학습</h5>
+                <div className="space-y-3">
+                  <div>
+                    <h6 className="font-medium text-gray-800 mb-2">📊 정량적 성과</h6>
+                    <ul className="space-y-1 text-gray-700 text-sm">
+                      <li>• <strong>사용자 지표:</strong> 출시 후 D-3 리텐션 28%, DAU 1,000명 달성</li>
+                      <li>• <strong>팀 관리:</strong> 24인 규모 조직 성공적 리드 (평균 경력 1.6년 미만)</li>
+                      <li>• <strong>프로젝트 성과:</strong> 9개월간 5개 프로젝트 동시 진행 및 완료</li>
+                      <li>• <strong>글로벌 확장:</strong> 3개국 동시 런칭 성공</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 className="font-medium text-gray-800 mb-2">💡 핵심 학습 및 역량</h6>
+                    <ul className="space-y-1 text-gray-700 text-sm">
+                      <li>• <strong>메타버스 기획 전문성:</strong> 가상 세계 설계부터 사용자 경험까지 전체 기획 역량</li>
+                      <li>• <strong>블록체인 이해:</strong> NFT, 토큰 이코노미 등 Web3 기술 기반 서비스 기획</li>
+                      <li>• <strong>글로벌 서비스 경험:</strong> 다국가 동시 런칭 및 현지화 프로세스 이해</li>
+                      <li>• <strong>데이터 기반 의사결정:</strong> Firebase, GA4를 활용한 사용자 행동 분석</li>
+                      <li>• <strong>조직 리더십:</strong> 주니어 중심 팀의 성장 관리 및 애자일 방법론 적용</li>
+                      <li>• <strong>위기 관리:</strong> 초기 서비스 반응 개선을 통한 지표 향상 경험</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
