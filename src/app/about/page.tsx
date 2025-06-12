@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto" suppressHydrationWarning>
       {/* 개인 정보 헤더 */}
       <section className="bg-white rounded-lg shadow-lg p-8 mb-8">
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
