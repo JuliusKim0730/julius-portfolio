@@ -31,7 +31,7 @@ const Header = () => {
       submenu: [
         { name: '[AI] 스톡폴리오', href: '/career/stockfolio' },
         { name: '[AI] 팩타고라', href: '/career/factora' },
-        { name: '[IT] 위에이알', href: '/career/wiar' },
+        { name: '[IT] 위에이알', href: '/career/wear' },
         { name: '[IT] 팀스노우볼', href: '/career/teamsnowball' },
         { name: '[게임] 더블유게임즈', href: '/career/wgames' },
         { name: '[IT] 넥스트매치', href: '/career/nextmatch' },
