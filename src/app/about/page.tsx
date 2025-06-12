@@ -9,7 +9,7 @@ export default function AboutPage() {
           </div>
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl font-bold text-gray-900 mb-2">김민균 (Kim Min Gyun)</h1>
-            <p className="text-xl text-gray-600 mb-4">게임기획전문가 · AI 서비스 기획자</p>
+            <p className="text-xl text-gray-600 mb-4">이끌어내는 기획자 · AI 서비스 기획 전문가</p>
             <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-8">
               <div className="flex items-center justify-center md:justify-start space-x-2">
                 <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -25,6 +25,132 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 자기소개 */}
+      <section className="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-blue-600 pb-2">자기소개</h2>
+        
+        {/* 메인 소개 */}
+        <div className="mb-8">
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            안녕하세요, <strong className="text-blue-600">이끌어내는 기획자 김민균</strong>입니다.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            저는 15년간 다양한 도메인에서 30여 개의 프로젝트를 기획하고 성공적으로 이끌어온 기획 전문가입니다.
+            게임부터 시작하여 데이팅앱, 메타버스, 이스포츠, 실시간퀴즈쇼, 지역 기반 OTT프로젝트 등에 참여했었습니다.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            최근에는 AI 서비스를 기획, 구축하는 일을 주도했으며, 비즈니스모델 설계를 진행했습니다.
+            또한, 더블유게임즈 이후 모든 기업에서 조직 리드 경험을 통해 복잡한 문제를 해결하고, 제품의 가치를 극대화하는 데 주력해왔습니다.
+          </p>
+        </div>
+
+        {/* AI 제품 기획 커리어 */}
+        <div className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm mr-3">1</span>
+            AI 제품 기획 커리어
+          </h3>
+          <div className="bg-blue-50 p-6 rounded-lg mb-4">
+            <h4 className="font-bold text-lg mb-2 text-blue-900">스톡폴리오 - Pixt AI</h4>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              최근 스톡폴리오에서 AI 영상 제작 서비스 'Pixt AI'의 PM으로 일했습니다.
+              CES, NAB쇼, 월드 IT쇼 등 국제 전시회에 제품을 성공적으로 출품했습니다.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              이 과정에서 AI 프롬프트 설계와 워크 플로우 고도화를 통해 사용자 경험을 최적화했습니다. 
+              사용자 경험의 설계를 기반으로 전시회마다 호평을 받았고, 다수의 MOU 체결과 고객사 컨택을 이끌어냈습니다.
+            </p>
+          </div>
+          <div className="bg-green-50 p-6 rounded-lg">
+            <h4 className="font-bold text-lg mb-2 text-green-900">팩타고라 - 법률 AI 서비스</h4>
+            <p className="text-gray-700 leading-relaxed">
+              팩타고라에서는 법률 AI 및 지식저장소 서비스의 Product Owner로 활동하며, 
+              GPT 설계와 웹사이트 IA 재구성을 통해 B2C 버전을 성공적으로 런칭했습니다.
+            </p>
+          </div>
+        </div>
+
+        {/* 조직 리드 경험 */}
+        <div className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+            <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm mr-3">2</span>
+            조직 리드 경험: 팀과 제품의 동반 성장
+          </h3>
+          <div className="space-y-6">
+            <div className="bg-purple-50 p-6 rounded-lg">
+              <h4 className="font-bold text-lg mb-2 text-purple-900">위에이알 - 보핀(Boppin) 서비스</h4>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                24인 규모의 메타버스 팀을 리드하며 '보핀(Boppin)' 서비스를 동남아시아 3개국에 성공적으로 런칭했습니다.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                평균 경력 1.6년 미만의 주니어 개발자들로 구성된 팀을 관리하며 애자일 방법론과 KPT 회고를 도입해 팀원들의 성장을 이끌어냈습니다.
+              </p>
+              <div className="bg-white p-4 rounded border-l-4 border-purple-500">
+                <p className="text-gray-700 font-medium">
+                  <strong>성과:</strong> 한 번도 출시 경험이 없는 회사에 제품 출시 경험을 이끌어내고, 
+                  초기 서비스의 아쉬운 반응을 업데이트를 통해 D-3 리텐션 28%, DAU 1천 명이라는 성과로 개선
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-orange-50 p-6 rounded-lg">
+              <h4 className="font-bold text-lg mb-2 text-orange-900">팀스노우볼 - 데카킬(Decakill)</h4>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                트위치 기반 실시간 예측 퀴즈 프로그램 '데카킬(Decakill)'의 PO로 활동하며, 
+                초기 아이데이션부터 개발, 런칭, 운영까지 전 과정을 총괄했습니다.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-3">
+                신규 구성된 팀은 주니어 조직이었기에 협업 프로세스를 수정, 모두가 성장하여 제품 출시를 경험할 수 있도록 했습니다.
+              </p>
+              <div className="bg-white p-4 rounded border-l-4 border-orange-500">
+                <p className="text-gray-700 font-medium">
+                  <strong>성과:</strong> 스트리머와 협업하여 시청자의 80% 이상이 참여하는 높은 몰입도를 이끌어내고, 
+                  이스포츠 구단 농심과 업무 협약 체결
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 핵심 강점 */}
+        <div className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+            <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm mr-3">💪</span>
+            핵심 강점
+          </h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg">
+              <h4 className="font-bold text-blue-900 mb-2">🤖 AI 기반 서비스 기획 역량</h4>
+              <p className="text-gray-700 text-sm">외부 AI API 활용 및 LLM 기반의 AI 세팅을 통한 서비스 기획 및 사용자 FLOW 구축</p>
+            </div>
+            <div className="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-lg">
+              <h4 className="font-bold text-green-900 mb-2">📊 데이터 기반 의사결정</h4>
+              <p className="text-gray-700 text-sm">사용자 행동 분석을 통한 문제 해결 및 제품 개선</p>
+            </div>
+            <div className="bg-gradient-to-r from-purple-50 to-purple-100 p-4 rounded-lg">
+              <h4 className="font-bold text-purple-900 mb-2">👥 조직 관리 및 리더십</h4>
+              <p className="text-gray-700 text-sm">다양한 규모의 팀 관리와 효율적인 업무 프로세스 구축</p>
+            </div>
+            <div className="bg-gradient-to-r from-orange-50 to-orange-100 p-4 rounded-lg">
+              <h4 className="font-bold text-orange-900 mb-2">🎯 문제 해결 능력</h4>
+              <p className="text-gray-700 text-sm">복잡한 문제를 구조화하고 실행 가능한 솔루션으로 전환</p>
+            </div>
+          </div>
+        </div>
+
+        {/* 비전 및 목표 */}
+        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg">
+          <h3 className="text-xl font-bold mb-4">💡 "상상을 현실로 이끌어내는 기획"</h3>
+          <p className="leading-relaxed mb-4">
+            사람들 머리 속 상상을 현실로 이끌어내며, 우리가 원하는 제품을 구체적으로 이끌어냅니다.
+            추상적인 아이디어를 구체적인 전략으로 설계하고, 이를 실행 가능한 결과물로 만들어내는 것이 저의 가장 큰 강점입니다.
+          </p>
+          <p className="leading-relaxed">
+            앞으로도 귀사의 비전 실현에 기여하며, 사용자와 시장 모두에게 사랑받는 제품을 만들어가고 싶습니다.
+          </p>
         </div>
       </section>
 
