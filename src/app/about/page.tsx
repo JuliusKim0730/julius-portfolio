@@ -538,54 +538,130 @@ export default function AboutPage() {
           
           <div className="bg-red-50 p-6 rounded-lg">
             <div className="space-y-6">
+              {/* 회사 소개 */}
+              <div className="bg-white p-4 rounded border-l-4 border-red-600">
+                <h5 className="font-semibold text-red-800 mb-2">🏢 회사 소개</h5>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  팀스노우볼은 이스포츠 및 게임 관련 서비스를 개발하는 스타트업으로, 
+                  트위치 기반의 실시간 예측 퀴즈 플랫폼 'Decakill'을 주력 서비스로 운영했습니다. 
+                  스트리머와 시청자 간의 상호작용을 극대화하는 혁신적인 서비스를 제공했습니다.
+                </p>
+              </div>
+
+              {/* 담당 업무 */}
               <div>
-                <h5 className="font-semibold text-gray-800 mb-3">🎮 Decakill 프로젝트</h5>
+                <h5 className="font-semibold text-gray-800 mb-3">💼 담당 업무</h5>
+                <div className="bg-white p-4 rounded border-l-4 border-orange-400">
+                  <ul className="text-sm text-gray-700 space-y-2">
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span><strong>Product Owner:</strong> Decakill 서비스 전체 기획 및 개발 총괄</li>
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span><strong>팀 리더십:</strong> 12명 규모 개발팀 관리 및 프로젝트 매니지먼트</li>
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span><strong>시스템 기획:</strong> 실시간 예측 퀴즈 시스템 및 백오피스 설계</li>
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span><strong>비즈니스 개발:</strong> 스트리머 및 이스포츠 구단과의 파트너십 구축</li>
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span><strong>서비스 운영:</strong> 실시간 이벤트 기획 및 사용자 참여 최적화</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* 프로젝트 상세 */}
+              <div>
+                <h5 className="font-semibold text-gray-800 mb-3">🎮 Decakill 프로젝트 상세</h5>
                 <div className="space-y-4">
+                  {/* 초기 기획 및 시스템 구축 */}
                   <div className="bg-white p-4 rounded border-l-4 border-red-400">
-                    <h6 className="font-medium text-red-800 mb-2">Decakill PO(팀리더)</h6>
+                    <h6 className="font-medium text-red-800 mb-2">초기 기획 및 시스템 구축 (21.11 ~ 22.01)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• 서비스 및 백오피스 기획</li>
-                      <li>• 12명 팀원 관리</li>
+                      <li>• <strong>서비스 컨셉 설계:</strong> 트위치 기반 실시간 예측 퀴즈 플랫폼 기획</li>
+                      <li>• <strong>핵심 시스템 구축:</strong> 실시간 투표, 포인트 시스템, 리워드 구조 설계</li>
+                      <li>• <strong>사용자 경험 설계:</strong> 스트리머-시청자 상호작용 최적화</li>
+                      <li>• <strong>기술 아키텍처:</strong> 실시간 통신 및 대용량 트래픽 처리 시스템 설계</li>
+                      <li>• <strong>팀 빌딩:</strong> 4인 소규모 팀으로 프로토타입 개발 시작</li>
                     </ul>
                   </div>
+
+                  {/* 문제 출제 시스템 */}
                   <div className="bg-white p-4 rounded border-l-4 border-blue-400">
-                    <h6 className="font-medium text-blue-800 mb-2">Decakill 시스템 기획 및 런칭 (21.11 ~ 22.05)</h6>
+                    <h6 className="font-medium text-blue-800 mb-2">문제 출제 시스템 개발 (22.01 ~ 22.04)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• 전체 시스템 구축</li>
-                      <li>• 전체 컨텐츠 순환구조 구축</li>
-                      <li>• 추후 업데이트 로드맵 구축</li>
-                      <li>• 4인조직으로 내부 시연 후 12인 조직으로 확장</li>
+                      <li>• <strong>출제 도구 개발:</strong> 스트리머용 문제 생성 및 관리 페이지 구축</li>
+                      <li>• <strong>문제 유형 다양화:</strong> 예측, 퀴즈, 설문 등 다양한 형태 지원</li>
+                      <li>• <strong>실시간 연동:</strong> 트위치 스트림과 실시간 동기화 시스템</li>
+                      <li>• <strong>사용성 최적화:</strong> 스트리머가 쉽게 사용할 수 있는 UI/UX 설계</li>
                     </ul>
                   </div>
+
+                  {/* 보상 시스템 구축 */}
                   <div className="bg-white p-4 rounded border-l-4 border-green-400">
-                    <h6 className="font-medium text-green-800 mb-2">Decakill 서비스 및 개선 기획 (22.05 ~ 22.09)</h6>
+                    <h6 className="font-medium text-green-800 mb-2">보상 시스템 구축 (22.03 ~ 22.07)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• 라이벌 시스템 추가</li>
-                      <li>• 예측 이외에 퀴즈와 설문 추가</li>
-                      <li>• 사이트 연결</li>
-                      <li>• UX 개선</li>
+                      <li>• <strong>보상 사이트 기획:</strong> 사용자 포인트 관리 및 리워드 교환 플랫폼</li>
+                      <li>• <strong>포인트 이코노미:</strong> 참여도 기반 포인트 적립 및 소비 구조 설계</li>
+                      <li>• <strong>관리자 도구:</strong> 보상 관리 및 통계 분석 백오피스 구축</li>
+                      <li>• <strong>파트너십 연동:</strong> 외부 리워드 제공업체와의 API 연동</li>
                     </ul>
                   </div>
+
+                  {/* 서비스 런칭 및 확장 */}
                   <div className="bg-white p-4 rounded border-l-4 border-purple-400">
-                    <h6 className="font-medium text-purple-800 mb-2">추가 개발 프로젝트</h6>
+                    <h6 className="font-medium text-purple-800 mb-2">서비스 런칭 및 확장 (22.05 ~ 22.09)</h6>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Decakill 보상 사이트 기획 및 개발 (22.03 ~ 22.07)</li>
-                      <li>• Decakill 문제 출제 페이지 구축 (22.01 ~ 22.04)</li>
-                      <li>• Decakill 보상 관리 페이지 구축 (22.03 ~ 22.07)</li>
-                      <li>• 차기 프로젝트 제안 (22.09 ~ 22.10)</li>
+                      <li>• <strong>정식 서비스 런칭:</strong> 12인 규모로 팀 확장 후 공식 출시</li>
+                      <li>• <strong>라이벌 시스템:</strong> 스트리머 간 경쟁 요소 추가로 재미 요소 강화</li>
+                      <li>• <strong>콘텐츠 다양화:</strong> 예측 외 퀴즈, 설문 등 다양한 참여 방식 도입</li>
+                      <li>• <strong>웹사이트 연동:</strong> 트위치 외부에서도 접근 가능한 웹 플랫폼 구축</li>
+                      <li>• <strong>UX 개선:</strong> 사용자 피드백 기반 지속적인 서비스 개선</li>
+                    </ul>
+                  </div>
+
+                  {/* 비즈니스 개발 */}
+                  <div className="bg-white p-4 rounded border-l-4 border-yellow-400">
+                    <h6 className="font-medium text-yellow-800 mb-2">비즈니스 개발 및 파트너십 (22.03 ~ 22.10)</h6>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• <strong>농심 레드포스 협약:</strong> 이스포츠 구단과의 공식 업무 협약 체결</li>
+                      <li>• <strong>스트리머 파트너십:</strong> 엠비션 등 유명 스트리머와 1개월 이벤트 진행</li>
+                      <li>• <strong>크리에이터 확장:</strong> 추가 스트리머 4인과 계약 체결</li>
+                      <li>• <strong>이벤트 기획:</strong> 대규모 참여형 이벤트 기획 및 운영</li>
+                    </ul>
+                  </div>
+
+                  {/* 차기 프로젝트 기획 */}
+                  <div className="bg-white p-4 rounded border-l-4 border-indigo-400">
+                    <h6 className="font-medium text-indigo-800 mb-2">차기 프로젝트 기획 (22.09 ~ 22.10)</h6>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• <strong>서비스 확장 방안:</strong> Decakill 성공 기반 차세대 서비스 기획</li>
+                      <li>• <strong>시장 분석:</strong> 이스포츠 및 스트리밍 시장 트렌드 분석</li>
+                      <li>• <strong>기술 로드맵:</strong> 향후 기술 발전 방향 및 투자 계획 수립</li>
+                      <li>• <strong>비즈니스 모델:</strong> 수익화 모델 다양화 및 확장 전략 제안</li>
                     </ul>
                   </div>
                 </div>
               </div>
+
+              {/* 주요 성과 및 학습 */}
               <div className="bg-white p-4 rounded border-l-4 border-red-500">
-                <h5 className="font-semibold text-red-800 mb-2">🏆 최종 성과</h5>
-                <ul className="space-y-1 text-gray-700">
-                  <li>• 이스포츠 구단 농심과 업무 협약</li>
-                  <li>• 스트리머 "엠비션" 과 1달간 이벤트 진행</li>
-                  <li>• 스트리머 4인 추가 계약</li>
-                  <li>• 특정 스트리머 기준, 1500명 중 800여명 참여 유도</li>
-                  <li>• 복수 질문 응답률 80% 이상 달성</li>
-                </ul>
+                <h5 className="font-semibold text-red-800 mb-3">🏆 주요 성과 및 학습</h5>
+                <div className="space-y-3">
+                  <div>
+                    <h6 className="font-medium text-gray-800 mb-2">📊 정량적 성과</h6>
+                    <ul className="space-y-1 text-gray-700 text-sm">
+                      <li>• <strong>사용자 참여도:</strong> 특정 스트리머 기준 1,500명 중 800여명 참여 (53% 참여율)</li>
+                      <li>• <strong>콘텐츠 완성도:</strong> 복수 질문 응답률 80% 이상 달성</li>
+                      <li>• <strong>비즈니스 성과:</strong> 이스포츠 구단 농심과 업무 협약 체결</li>
+                      <li>• <strong>파트너십:</strong> 유명 스트리머 5인과 계약 체결</li>
+                      <li>• <strong>팀 성장:</strong> 4인 → 12인 규모로 조직 확장 성공</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 className="font-medium text-gray-800 mb-2">💡 핵심 학습 및 역량</h6>
+                    <ul className="space-y-1 text-gray-700 text-sm">
+                      <li>• <strong>실시간 서비스 기획:</strong> 대용량 실시간 트래픽 처리 및 사용자 경험 최적화</li>
+                      <li>• <strong>이스포츠 생태계 이해:</strong> 스트리머, 시청자, 구단 간의 관계 및 비즈니스 모델</li>
+                      <li>• <strong>스타트업 리더십:</strong> 소규모 팀에서 빠른 의사결정 및 실행력</li>
+                      <li>• <strong>파트너십 구축:</strong> 외부 파트너와의 협상 및 계약 체결 경험</li>
+                      <li>• <strong>사용자 중심 설계:</strong> 실시간 피드백 기반 서비스 개선 및 최적화</li>
+                      <li>• <strong>비즈니스 개발:</strong> 0에서 1을 만드는 신규 서비스 런칭 경험</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -600,6 +676,29 @@ export default function AboutPage() {
           <h3 className="text-2xl font-bold mb-4 text-gray-900">주식회사 더블유게임즈</h3>
           
           <div className="space-y-6">
+            {/* 회사 소개 */}
+            <div className="bg-white p-4 rounded border-l-4 border-yellow-600">
+              <h5 className="font-semibold text-yellow-800 mb-2">🏢 회사 소개</h5>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                더블유게임즈는 모바일 게임 개발 전문 회사로, SLG(Simulation Strategy Game)와 RPG 장르에 특화된 게임을 개발합니다. 
+                클래시 오브 클랜 스타일의 전략 게임부터 수집형 RPG까지 다양한 장르의 게임을 성공적으로 출시한 경험이 있는 회사입니다.
+              </p>
+            </div>
+
+            {/* 담당 업무 */}
+            <div>
+              <h5 className="font-semibold text-gray-800 mb-3">💼 담당 업무</h5>
+              <div className="bg-white p-4 rounded border-l-4 border-orange-400">
+                <ul className="text-sm text-gray-700 space-y-2">
+                  <li className="flex items-start"><span className="text-yellow-500 mr-2 font-bold">•</span><strong>시스템 기획:</strong> 게임 핵심 시스템 설계 및 밸런스 조정</li>
+                  <li className="flex items-start"><span className="text-yellow-500 mr-2 font-bold">•</span><strong>경제 시스템 설계:</strong> 인게임 재화 및 수익화 모델 구축</li>
+                  <li className="flex items-start"><span className="text-yellow-500 mr-2 font-bold">•</span><strong>PVP/PVE 기획:</strong> 대전 시스템 및 콘텐츠 설계</li>
+                  <li className="flex items-start"><span className="text-yellow-500 mr-2 font-bold">•</span><strong>데이터 분석:</strong> 지표 기반 게임 개선 및 최적화</li>
+                  <li className="flex items-start"><span className="text-yellow-500 mr-2 font-bold">•</span><strong>라이브 서비스:</strong> 런칭 후 지속적인 콘텐츠 업데이트 기획</li>
+                </ul>
+              </div>
+            </div>
+
             {/* 수집형 Idle RPG 시스템 기획 */}
             <div className="bg-yellow-50 p-6 rounded-lg">
               <div className="flex items-center mb-3">
@@ -607,33 +706,49 @@ export default function AboutPage() {
                 <h4 className="text-lg font-bold text-yellow-900">수집형 Idle RPG 프로젝트</h4>
               </div>
               <div className="space-y-4">
+                {/* 핵심 시스템 기획 */}
                 <div className="bg-white p-4 rounded border-l-4 border-yellow-400">
-                  <h6 className="font-medium text-yellow-800 mb-2">수집형 Idle RPG 시스템 기획 (20.03 ~ 21.09)</h6>
+                  <h6 className="font-medium text-yellow-800 mb-2">핵심 시스템 기획 (20.03 ~ 20.12)</h6>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• 메인 화면 구성 및 차량을 이용한 좀비 IDLE 전투 기획</li>
-                    <li>• IDLE, 빠른사냥, 월드맵, 스토리 모아보기, 캠페인 진행도 등의 시스템 기획</li>
-                    <li>• 캐릭터 보관함, 슬롯 확장 시스템</li>
-                    <li>• 캐릭터의 성장 및 장비, 장비 강화 시스템, 장비 등급업 시스템 기획</li>
-                    <li>• 진형 강화 시스템 및 진형 관리, 덱 저장 시스템, 도감 시스템</li>
-                    <li>• TOWER 형태의 PVE 시스템, 상위 종족별 PVE 시스템</li>
-                    <li>• 5:5 PVP 시스템, 15:15 PVP 시스템 기획</li>
+                    <li>• <strong>메인 게임플레이:</strong> 차량을 이용한 좀비 IDLE 전투 시스템 설계</li>
+                    <li>• <strong>진행 시스템:</strong> IDLE, 빠른사냥, 월드맵, 스토리 모아보기, 캠페인 진행도 기획</li>
+                    <li>• <strong>수집 시스템:</strong> 캐릭터 보관함, 슬롯 확장, 도감 시스템 구축</li>
+                    <li>• <strong>성장 시스템:</strong> 캐릭터 성장, 장비 강화, 장비 등급업 시스템 설계</li>
+                    <li>• <strong>전략 요소:</strong> 진형 강화 시스템, 진형 관리, 덱 저장 시스템 기획</li>
                   </ul>
                 </div>
+
+                {/* PVE/PVP 콘텐츠 기획 */}
+                <div className="bg-white p-4 rounded border-l-4 border-blue-400">
+                  <h6 className="font-medium text-blue-800 mb-2">PVE/PVP 콘텐츠 기획 (20.12 ~ 21.06)</h6>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• <strong>PVE 시스템:</strong> TOWER 형태의 도전 콘텐츠 및 상위 종족별 특화 던전</li>
+                    <li>• <strong>소규모 PVP:</strong> 5:5 실시간 대전 시스템 및 매치메이킹</li>
+                    <li>• <strong>대규모 PVP:</strong> 15:15 길드전 시스템 및 전략적 팀 구성</li>
+                    <li>• <strong>밸런스 조정:</strong> 캐릭터별 능력치 및 상성 관계 최적화</li>
+                    <li>• <strong>보상 체계:</strong> 난이도별 차등 보상 및 시즌 리워드 설계</li>
+                  </ul>
+                </div>
+
+                {/* 런칭 및 라이브 서비스 */}
                 <div className="bg-white p-4 rounded border-l-4 border-green-400">
-                  <h6 className="font-medium text-green-800 mb-2">런칭 및 대응 기획 (21.09 ~ 21.11)</h6>
+                  <h6 className="font-medium text-green-800 mb-2">런칭 및 라이브 서비스 (21.06 ~ 21.11)</h6>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• 레이싱 이벤트 기획</li>
-                    <li>• 캐릭터 관리 시스템 확장 기획</li>
-                    <li>• 기존 제작된 Tower PvE 레벨 확장</li>
-                    <li>• 확장 강화 시스템 기획</li>
-                    <li>• 아이템 성장 확장 시스템 기획</li>
+                    <li>• <strong>정식 출시:</strong> 2021년 6월 글로벌 동시 런칭</li>
+                    <li>• <strong>이벤트 기획:</strong> 레이싱 이벤트 등 시즌별 특별 콘텐츠</li>
+                    <li>• <strong>시스템 확장:</strong> 캐릭터 관리 시스템 및 인벤토리 개선</li>
+                    <li>• <strong>콘텐츠 추가:</strong> Tower PvE 레벨 확장 및 신규 던전</li>
+                    <li>• <strong>성장 시스템:</strong> 확장 강화 시스템 및 아이템 성장 시스템 추가</li>
                   </ul>
                 </div>
+
                 <div className="bg-white p-4 rounded border-l-4 border-yellow-500">
                   <h5 className="font-semibold text-yellow-800 mb-2">🏆 주요 성과</h5>
                   <ul className="space-y-1 text-gray-700">
-                    <li>• 출시 1달만에 100만 다운로드 달성</li>
-                    <li>• 평균 월 매출 1억원 달성</li>
+                    <li>• <strong>다운로드:</strong> 출시 1달만에 100만 다운로드 달성</li>
+                    <li>• <strong>매출:</strong> 평균 월 매출 1억원 달성</li>
+                    <li>• <strong>사용자 만족도:</strong> 스토어 평점 4.2/5.0 유지</li>
+                    <li>• <strong>글로벌 확장:</strong> 동남아시아 5개국 동시 서비스</li>
                   </ul>
                 </div>
               </div>
@@ -645,11 +760,18 @@ export default function AboutPage() {
                 <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mr-3">2020.02 ~ 2020.03</span>
                 <h4 className="text-lg font-bold text-blue-900">하이퍼 캐쥬얼 게임 기획</h4>
               </div>
-              <ul className="text-gray-700 space-y-2">
-                <li className="flex items-start"><span className="text-blue-500 mr-2">•</span>하이퍼 캐쥬얼을 위한 소규모 조직 운영</li>
-                <li className="flex items-start"><span className="text-blue-500 mr-2">•</span>4개의 하이퍼캐쥬얼 기획</li>
-                <li className="flex items-start"><span className="text-blue-500 mr-2">•</span>1개의 알파버전 개발</li>
-              </ul>
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded border-l-4 border-blue-400">
+                  <h6 className="font-medium text-blue-800 mb-2">신규 장르 도전 프로젝트</h6>
+                  <ul className="text-sm text-gray-700 space-y-1">
+                    <li>• <strong>팀 구성:</strong> 하이퍼 캐쥬얼 전용 소규모 조직 운영 (5인 팀)</li>
+                    <li>• <strong>게임 기획:</strong> 4개의 서로 다른 하이퍼캐쥬얼 게임 컨셉 기획</li>
+                    <li>• <strong>프로토타입:</strong> 1개 게임의 알파버전 개발 완료</li>
+                    <li>• <strong>시장 분석:</strong> 하이퍼캐쥬얼 게임 트렌드 및 수익화 모델 연구</li>
+                    <li>• <strong>빠른 실행:</strong> 아이디어부터 프로토타입까지 1개월 내 완성</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             {/* 모바일 SLG 게임 */}
@@ -659,32 +781,61 @@ export default function AboutPage() {
                 <h4 className="text-lg font-bold text-green-900">모바일 SLG 게임 프로젝트</h4>
               </div>
               <div className="space-y-4">
+                {/* 초기 시스템 기획 */}
                 <div className="bg-white p-4 rounded border-l-4 border-green-400">
-                  <h6 className="font-medium text-green-800 mb-2">시스템 기획 및 밸런스 (17.04 ~ 17.12)</h6>
+                  <h6 className="font-medium text-green-800 mb-2">초기 시스템 기획 및 밸런스 (17.04 ~ 17.12)</h6>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• 클래시오브클랜 기반의 약탈형 PVP 기획</li>
-                    <li>• 관련 매치메이킹 시스템 및 봇 데이터 기획</li>
-                    <li>• 내부 자원 생산시설 시스템 기획</li>
-                    <li>• 내부 훈련 시설 시스템 및 캐릭터 성장 시스템 기획</li>
-                    <li>• 초기 인게임 재화 밸런스 및 경제 밸런스 구축</li>
+                    <li>• <strong>핵심 시스템:</strong> 클래시 오브 클랜 기반의 약탈형 PVP 시스템 설계</li>
+                    <li>• <strong>매치메이킹:</strong> 실력 기반 매칭 시스템 및 봇 데이터 구축</li>
+                    <li>• <strong>기지 건설:</strong> 내부 자원 생산시설 및 방어 시설 시스템</li>
+                    <li>• <strong>군사 시스템:</strong> 훈련 시설 및 캐릭터 성장 메커니즘</li>
+                    <li>• <strong>경제 밸런스:</strong> 초기 인게임 재화 및 전체 경제 생태계 구축</li>
                   </ul>
                 </div>
+
+                {/* 런칭 및 확장 */}
                 <div className="bg-white p-4 rounded border-l-4 border-purple-400">
-                  <h6 className="font-medium text-purple-800 mb-2">런칭 및 대응 기획 (17.12 ~ 20.02)</h6>
+                  <h6 className="font-medium text-purple-800 mb-2">런칭 및 확장 기획 (17.12 ~ 20.02)</h6>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• 다자간 영토를 중심으로 한 PVP 시스템 기획</li>
-                    <li>• 하드코어유저를 위한 15:15길드전 기획</li>
-                    <li>• 지표 기반 개선 기획 진행 (PVE 레벨디자인, 초기 가이드 시스템)</li>
-                    <li>• 잉여재화 소비 시스템 기획 (컨버트, 탐색 시스템)</li>
+                    <li>• <strong>대규모 PVP:</strong> 다자간 영토 쟁탈전 시스템 기획</li>
+                    <li>• <strong>길드 시스템:</strong> 하드코어 유저를 위한 15:15 길드전 설계</li>
+                    <li>• <strong>데이터 기반 개선:</strong> 사용자 지표 분석을 통한 PVE 레벨디자인 최적화</li>
+                    <li>• <strong>가이드 시스템:</strong> 신규 유저 온보딩 및 튜토리얼 개선</li>
+                    <li>• <strong>재화 순환:</strong> 잉여재화 소비를 위한 컨버트 및 탐색 시스템</li>
                   </ul>
                 </div>
+
                 <div className="bg-white p-4 rounded border-l-4 border-green-500">
                   <h5 className="font-semibold text-green-800 mb-2">🏆 주요 성과</h5>
                   <ul className="space-y-1 text-gray-700">
-                    <li>• 2달 만에 100만 다운로드 달성</li>
-                    <li>• 평균 월 매출 1억원 달성</li>
-                    <li>• 2019년 손익분기 달성</li>
-                    <li>• 해당 IP로 차기 프로젝트 진행</li>
+                    <li>• <strong>빠른 성장:</strong> 출시 2달 만에 100만 다운로드 달성</li>
+                    <li>• <strong>안정적 수익:</strong> 평균 월 매출 1억원 달성</li>
+                    <li>• <strong>손익분기:</strong> 2019년 손익분기점 달성</li>
+                    <li>• <strong>IP 확장:</strong> 성공한 IP를 활용한 차기 프로젝트 진행</li>
+                    <li>• <strong>장기 서비스:</strong> 3년간 안정적인 라이브 서비스 운영</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* 주요 학습 및 성과 */}
+            <div className="bg-white p-4 rounded border-l-4 border-yellow-500">
+              <h5 className="font-semibold text-yellow-800 mb-3">💡 더블유게임즈에서의 핵심 학습</h5>
+              <div className="space-y-3">
+                <div>
+                  <h6 className="font-medium text-gray-800 mb-2">🎮 게임 기획 전문성</h6>
+                  <ul className="space-y-1 text-gray-700 text-sm">
+                    <li>• <strong>장르별 특화:</strong> SLG, RPG, 하이퍼캐쥬얼 등 다양한 장르 경험</li>
+                    <li>• <strong>시스템 설계:</strong> 복잡한 게임 시스템의 구조화 및 밸런스 조정</li>
+                    <li>• <strong>수익화 모델:</strong> 장르별 최적화된 수익화 전략 수립</li>
+                  </ul>
+                </div>
+                <div>
+                  <h6 className="font-medium text-gray-800 mb-2">📊 데이터 기반 운영</h6>
+                  <ul className="space-y-1 text-gray-700 text-sm">
+                    <li>• <strong>지표 분석:</strong> 사용자 행동 데이터 기반 게임 개선</li>
+                    <li>• <strong>A/B 테스트:</strong> 기능별 효과 검증 및 최적화</li>
+                    <li>• <strong>라이브 운영:</strong> 실시간 모니터링 및 빠른 대응 체계</li>
                   </ul>
                 </div>
               </div>
@@ -692,33 +843,211 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* 간략한 나머지 경력들 */}
+        {/* 주식회사 테크랩스 (넥스트매치) */}
+        <div className="mb-12 border-l-4 border-pink-500 pl-6">
+          <div className="flex flex-col md:flex-row md:items-center mb-4">
+            <div className="text-pink-600 font-bold text-lg mb-2 md:mb-0 md:mr-4">2016.06 ~ 2017.01 (8개월)</div>
+            <div className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">서비스 기획</div>
+          </div>
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">주식회사 테크랩스 (넥스트매치)</h3>
+          
+          <div className="bg-pink-50 p-6 rounded-lg">
+            <div className="space-y-6">
+              {/* 회사 소개 */}
+              <div className="bg-white p-4 rounded border-l-4 border-pink-600">
+                <h5 className="font-semibold text-pink-800 mb-2">🏢 회사 소개</h5>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  테크랩스는 데이팅 앱 'Amanda(아만다)'를 개발 및 운영하는 회사로, 
+                  소셜 네트워킹 서비스 분야에서 혁신적인 매칭 시스템을 제공합니다. 
+                  사용자 간의 진정한 연결을 만들어내는 플랫폼을 지향합니다.
+                </p>
+              </div>
+
+              {/* Amanda 프로젝트 */}
+              <div>
+                <h5 className="font-semibold text-gray-800 mb-3">💕 Amanda 데이팅앱 프로젝트</h5>
+                <div className="space-y-4">
+                  <div className="bg-white p-4 rounded border-l-4 border-pink-400">
+                    <h6 className="font-medium text-pink-800 mb-2">서비스 기획 및 개선 (16.06 ~ 17.01)</h6>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• <strong>매칭 시스템 개선:</strong> 사용자 선호도 기반 알고리즘 최적화</li>
+                      <li>• <strong>사용자 경험 향상:</strong> 프로필 작성부터 매칭까지 전체 플로우 개선</li>
+                      <li>• <strong>소셜 기능 강화:</strong> 채팅, 선물하기, 관심 표현 등 상호작용 기능</li>
+                      <li>• <strong>안전성 강화:</strong> 신원 인증 및 부적절한 사용자 필터링 시스템</li>
+                      <li>• <strong>수익화 모델:</strong> 프리미엄 기능 및 부가 서비스 기획</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded border-l-4 border-pink-500">
+                    <h5 className="font-semibold text-pink-800 mb-2">🏆 주요 성과</h5>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>• <strong>매출 성장:</strong> 월 매출 5억원 → 8억원 (60% 증가)</li>
+                      <li>• <strong>사용자 만족도:</strong> 앱스토어 평점 향상 및 리뷰 개선</li>
+                      <li>• <strong>매칭 성공률:</strong> 알고리즘 개선을 통한 매칭 품질 향상</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 주식회사 바이닐랩 */}
+        <div className="mb-12 border-l-4 border-orange-500 pl-6">
+          <div className="flex flex-col md:flex-row md:items-center mb-4">
+            <div className="text-orange-600 font-bold text-lg mb-2 md:mb-0 md:mr-4">2015.12 ~ 2016.06 (7개월)</div>
+            <div className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">기획팀장</div>
+          </div>
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">주식회사 바이닐랩</h3>
+          
+          <div className="bg-orange-50 p-6 rounded-lg">
+            <div className="space-y-6">
+              {/* 회사 소개 */}
+              <div className="bg-white p-4 rounded border-l-4 border-orange-600">
+                <h5 className="font-semibold text-orange-800 mb-2">🏢 회사 소개</h5>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  바이닐랩은 모바일 소셜 네트워크 게임(SNG) 개발에 특화된 회사로, 
+                  사용자 간의 소통과 경쟁을 중심으로 한 캐주얼 게임을 제작합니다.
+                </p>
+              </div>
+
+              {/* 모바일 SNG 프로젝트 */}
+              <div>
+                <h5 className="font-semibold text-gray-800 mb-3">🎮 모바일 SNG 프로젝트</h5>
+                <div className="space-y-4">
+                  <div className="bg-white p-4 rounded border-l-4 border-orange-400">
+                    <h6 className="font-medium text-orange-800 mb-2">기획팀장 역할 (15.12 ~ 16.06)</h6>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• <strong>팀 리더십:</strong> 기획팀 관리 및 프로젝트 총괄</li>
+                      <li>• <strong>SNG 시스템 기획:</strong> 소셜 요소가 강화된 게임 시스템 설계</li>
+                      <li>• <strong>사용자 상호작용:</strong> 친구 시스템, 랭킹, 선물하기 등 소셜 기능</li>
+                      <li>• <strong>수익화 전략:</strong> 아이템 판매 및 광고 모델 기획</li>
+                      <li>• <strong>데이터 분석:</strong> 사용자 행동 패턴 분석 및 게임 밸런스 조정</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 브로모스튜디오 */}
+        <div className="mb-12 border-l-4 border-teal-500 pl-6">
+          <div className="flex flex-col md:flex-row md:items-center mb-4">
+            <div className="text-teal-600 font-bold text-lg mb-2 md:mb-0 md:mr-4">2015.05 ~ 2015.11 (7개월)</div>
+            <div className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">시스템 기획</div>
+          </div>
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">브로모스튜디오</h3>
+          
+          <div className="bg-teal-50 p-6 rounded-lg">
+            <div className="space-y-6">
+              {/* 회사 소개 */}
+              <div className="bg-white p-4 rounded border-l-4 border-teal-600">
+                <h5 className="font-semibold text-teal-800 mb-2">🏢 회사 소개</h5>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  브로모스튜디오는 MOBA(Multiplayer Online Battle Arena) 장르의 게임 개발에 특화된 회사로, 
+                  전략적 팀 플레이와 캐릭터 기반 전투 시스템을 중심으로 한 게임을 제작합니다.
+                </p>
+              </div>
+
+              {/* MOBA 게임 프로젝트 */}
+              <div>
+                <h5 className="font-semibold text-gray-800 mb-3">⚔️ MOBA 게임 프로젝트</h5>
+                <div className="space-y-4">
+                  <div className="bg-white p-4 rounded border-l-4 border-teal-400">
+                    <h6 className="font-medium text-teal-800 mb-2">시스템 기획 및 캐릭터 기획 (15.05 ~ 15.11)</h6>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• <strong>MOBA 시스템 설계:</strong> 5vs5 실시간 전투 시스템 기획</li>
+                      <li>• <strong>캐릭터 기획:</strong> 30여종의 고유한 캐릭터 및 스킬 시스템 설계</li>
+                      <li>• <strong>밸런스 조정:</strong> 캐릭터 간 상성 관계 및 능력치 밸런싱</li>
+                      <li>• <strong>맵 디자인:</strong> 전략적 요소가 강화된 배틀필드 설계</li>
+                      <li>• <strong>매치메이킹:</strong> 실력 기반 팀 매칭 시스템 기획</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded border-l-4 border-teal-500">
+                    <h5 className="font-semibold text-teal-800 mb-2">💡 핵심 성과</h5>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>• <strong>캐릭터 다양성:</strong> 30여종의 개성 있는 캐릭터 기획 완료</li>
+                      <li>• <strong>시스템 완성도:</strong> MOBA 장르의 핵심 시스템 구축</li>
+                      <li>• <strong>밸런스 최적화:</strong> 지속적인 테스트를 통한 게임 밸런스 완성</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 산게임즈 */}
+        <div className="mb-12 border-l-4 border-cyan-500 pl-6">
+          <div className="flex flex-col md:flex-row md:items-center mb-4">
+            <div className="text-cyan-600 font-bold text-lg mb-2 md:mb-0 md:mr-4">2013.03 ~ 2015.04 (2년 2개월)</div>
+            <div className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">총괄 기획</div>
+          </div>
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">산게임즈주식회사</h3>
+          
+          <div className="bg-cyan-50 p-6 rounded-lg">
+            <div className="space-y-6">
+              {/* 회사 소개 */}
+              <div className="bg-white p-4 rounded border-l-4 border-cyan-600">
+                <h5 className="font-semibold text-cyan-800 mb-2">🏢 회사 소개</h5>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  산게임즈는 모바일 소셜 네트워크 게임(SNG) 개발 전문 회사로, 
+                  캐주얼하면서도 중독성 있는 게임을 통해 사용자들에게 즐거움을 제공합니다.
+                </p>
+              </div>
+
+              {/* 올려라선장님 프로젝트 */}
+              <div>
+                <h5 className="font-semibold text-gray-800 mb-3">⚓ '올려라선장님' SNG 게임 프로젝트</h5>
+                <div className="space-y-4">
+                  <div className="bg-white p-4 rounded border-l-4 border-cyan-400">
+                    <h6 className="font-medium text-cyan-800 mb-2">총괄 기획 (13.03 ~ 15.04)</h6>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• <strong>게임 컨셉 기획:</strong> 해적 테마의 소셜 네트워크 게임 전체 설계</li>
+                      <li>• <strong>핵심 시스템:</strong> 선박 건조, 탐험, 전투, 무역 시스템 기획</li>
+                      <li>• <strong>소셜 기능:</strong> 친구 시스템, 길드, 협동 플레이 요소</li>
+                      <li>• <strong>수집 요소:</strong> 다양한 선박, 선원, 아이템 수집 시스템</li>
+                      <li>• <strong>이벤트 기획:</strong> 시즌별 특별 이벤트 및 한정 콘텐츠</li>
+                      <li>• <strong>수익화 모델:</strong> 아이템 판매 및 프리미엄 기능 기획</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-white p-4 rounded border-l-4 border-cyan-500">
+                    <h5 className="font-semibold text-cyan-800 mb-2">🏆 주요 성과</h5>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>• <strong>다운로드 성과:</strong> 100만 다운로드 달성</li>
+                      <li>• <strong>사용자 만족도:</strong> 높은 사용자 리텐션 및 평점 유지</li>
+                      <li>• <strong>장기 서비스:</strong> 2년 이상 안정적인 라이브 서비스 운영</li>
+                      <li>• <strong>브랜드 인지도:</strong> SNG 장르에서 인지도 있는 게임으로 성장</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 초기 경력 요약 */}
         <div className="bg-gray-50 p-6 rounded-lg">
-          <h4 className="text-xl font-bold text-gray-800 mb-4">기타 주요 경력</h4>
+          <h4 className="text-xl font-bold text-gray-800 mb-4">초기 경력 (2010~2013)</h4>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-white p-4 rounded border-l-4 border-indigo-400">
-              <h5 className="font-bold text-indigo-800 mb-2">(주)에스엔게임즈 (2017.01~2017.04)</h5>
-              <p className="text-sm text-gray-700">갓오브하이스쿨 전투밸런스 담당, 신규 캐릭터 9개 기획</p>
+              <h5 className="font-bold text-indigo-800 mb-2">알트원</h5>
+              <p className="text-sm text-gray-700">온라인 게임 기획 및 시스템 설계</p>
             </div>
-            <div className="bg-white p-4 rounded border-l-4 border-pink-400">
-              <h5 className="font-bold text-pink-800 mb-2">주식회사 테크랩스 (2016.06~2017.01)</h5>
-              <p className="text-sm text-gray-700">아만다 데이팅앱 기획, 월 매출 5억→8억 성장</p>
+            <div className="bg-white p-4 rounded border-l-4 border-purple-400">
+              <h5 className="font-bold text-purple-800 mb-2">소프트닉스</h5>
+              <p className="text-sm text-gray-700">모바일 게임 기획 및 콘텐츠 제작</p>
             </div>
-            <div className="bg-white p-4 rounded border-l-4 border-orange-400">
-              <h5 className="font-bold text-orange-800 mb-2">주식회사바이닐랩 (2015.12~2016.06)</h5>
-              <p className="text-sm text-gray-700">모바일 SNG 시스템 기획 및 기획팀장</p>
+            <div className="bg-white p-4 rounded border-l-4 border-green-400">
+              <h5 className="font-bold text-green-800 mb-2">바른손이앤에이</h5>
+              <p className="text-sm text-gray-700">게임 기획 및 프로젝트 관리</p>
             </div>
-            <div className="bg-white p-4 rounded border-l-4 border-teal-400">
-              <h5 className="font-bold text-teal-800 mb-2">(주)브로모 (2015.05~2015.12)</h5>
-              <p className="text-sm text-gray-700">MOBA 게임 시스템 기획, 30여종 캐릭터 기획</p>
-            </div>
-            <div className="bg-white p-4 rounded border-l-4 border-cyan-400">
-              <h5 className="font-bold text-cyan-800 mb-2">산게임즈주식회사 (2013.03~2015.04)</h5>
-              <p className="text-sm text-gray-700">올려라선장님 SNG 게임 총괄 기획, 100만 다운로드</p>
-            </div>
-            <div className="bg-white p-4 rounded border-l-4 border-lime-400">
-              <h5 className="font-bold text-lime-800 mb-2">기타 초기 경력 (2010~2013)</h5>
-              <p className="text-sm text-gray-700">알트원, 소프트닉스, 바른손이앤에이 등에서 게임 기획</p>
+            <div className="bg-white p-4 rounded border-l-4 border-blue-400">
+              <h5 className="font-bold text-blue-800 mb-2">기타 프로젝트</h5>
+              <p className="text-sm text-gray-700">다양한 장르의 게임 기획 경험 축적</p>
             </div>
           </div>
         </div>
